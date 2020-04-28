@@ -16,5 +16,12 @@ for d in data:
 
 print('留言平均長度是', sum_len/len(data))
 
+new = []
+for d in data:  # for loop的意思就是把清單中的東西一個一個拿出來，d是字串 data 是清單
+	if len(d) < 12:
+		new.append(d)
+print('一共有', len(new), '筆留言長度小於12')
+
+
 
 
